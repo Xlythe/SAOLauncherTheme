@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.xlythe.saoblacktheme.Stub"
+            android:name=".Stub"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.xlythe.saolauncher.THEME" />
