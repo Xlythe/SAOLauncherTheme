@@ -1,4 +1,4 @@
-package com.xlythe.saoblacktheme;
+package com.xlythe.saolauncher.theme;
 
 import android.app.Activity;
 
