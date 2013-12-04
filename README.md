@@ -5,10 +5,10 @@ How to write a them
 
 Download the [example app](https://github.com/Xlythe/SAOLauncherTheme) to get started. It's dead simple, a theme is nothing but images and sounds.
 
--Start by replacing the images in res/drawable-xxhdpi (without changing their names) with your own versions.
--Next, if you want custom sounds, replace the mp3 files in res/raw.
--Thirdly, if you want the settings to be dark you don't have to do anything, but to make them white again you'll have to remove the line &lt;string name="app_theme"&gt; in res/values/strings.xml and res/values-v11/strings.xml. Note, your app name is in res/values/strings.xml as well.
--Lastly, change the package name. To do that, open AndroidManifest.xml to edit the 3rd line (package=...) to whatever you'd like.
+- Start by replacing the images in res/drawable-xxhdpi (without changing their names) with your own versions.
+- Next, if you want custom sounds, replace the mp3 files in res/raw.
+- Thirdly, if you want the settings to be dark you don't have to do anything, but to make them white again you'll have to remove the line &lt;string name="app_theme"&gt; in res/values/strings.xml and res/values-v11/strings.xml. Note, your app name is in res/values/strings.xml as well.
+- Lastly, change the package name. To do that, open AndroidManifest.xml to edit the 3rd line (package=...) to whatever you'd like.
 
 When your app is installed, it'll show up as an option in SAO Launcher.
 
