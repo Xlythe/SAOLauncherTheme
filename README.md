@@ -17,13 +17,15 @@ To change the name of the theme, look in /res/values/strings.xml. You will also 
 
 In AndroidManifest.xml
 
--<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xlythe.saolauncher.theme.XXXX"
--<provider
+
+<provider
     android:name=".FileProvider"
     android:authorities="com.xlythe.saolauncher.theme.XXXX.FileProvider"
 
 In /java or /src (Depends on Android Studio vs Eclipse)
 
--The folders will look like /com/xlythe/saolauncher/theme/XXXX
--The .java files, at the very top, "package com.xlythe.saolauncher.theme.XXXX"
+The folders will look like /com/xlythe/saolauncher/theme/XXXX
+
+The .java files, at the very top, "package com.xlythe.saolauncher.theme.XXXX"
