@@ -16,12 +16,14 @@ For fonts, look in /assets
 To change the name of the theme, look in /res/values/strings.xml. You will also need to change the package name, which is a unique identifier for your app. The package name typically looks like com.xlythe.saolauncher.theme.XXXX. It appears in a few places, but in general you have to change it...
 
 In AndroidManifest.xml
+
 -<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xlythe.saolauncher.theme.XXXX" >
+    package="com.xlythe.saolauncher.theme.XXXX"
 -<provider
     android:name=".FileProvider"
     android:authorities="com.xlythe.saolauncher.theme.XXXX.FileProvider"
 
 In /java or /src (Depends on Android Studio vs Eclipse)
+
 -The folders will look like /com/xlythe/saolauncher/theme/XXXX
 -The .java files, at the very top, "package com.xlythe.saolauncher.theme.XXXX"
