@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xlythe.saolauncher.theme.cyanmod"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/player_on"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xlythe.saolauncher.theme.cyanmod.Stub"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.xlythe.saolauncher.THEME" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".FileProvider"
+            android:authorities="com.xlythe.saolauncher.theme.cyanmod.FileProvider"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

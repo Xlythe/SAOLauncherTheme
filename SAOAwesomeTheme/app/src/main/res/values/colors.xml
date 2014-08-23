@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_title">#666666</color>
+    <color name="dialog_title">#333333</color>
+    <color name="dialog_message">#777777</color>
+    <color name="store_tab_text">#444444</color>
+    <drawable name="sms_top">#e4e5e6</drawable>
+    <drawable name="sms_bottom">#e4e5e6</drawable>
+</resources>

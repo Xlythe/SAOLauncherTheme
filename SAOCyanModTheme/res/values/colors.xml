@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_title">#00b1e5</color>
+    <color name="dialog_title">#ffffff</color>
+    <color name="dialog_message">#ffffff</color>
+</resources>

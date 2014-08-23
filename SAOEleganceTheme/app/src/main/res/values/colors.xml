@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="orange">#33b5e5</color>
+    <color name="item_title_normal">#555555</color>
+    <color name="item_title_selected">#ffffff</color>
+    <color name="dialog_title">#555555</color>
+    <color name="dialog_message">#777777</color>
+    <color name="dialog_background">#e4e5e6</color>
+    <color name="dim_window">#c1c8c8c8</color>
+    <color name="popup_accept">#ffffff</color>
+    <color name="popup_deny">#555555</color>
+
+</resources>

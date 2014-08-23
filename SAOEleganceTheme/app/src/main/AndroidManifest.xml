@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xlythe.saolauncher.theme.newage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Stub"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.xlythe.saolauncher.THEME" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".FileProvider"
+            android:authorities="com.xlythe.saolauncher.theme.newage.FileProvider"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

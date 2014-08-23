@@ -1,24 +1,27 @@
 SAOLauncherTheme
 ================
 
-How to write a them
+Here are a collection of themes for SAO Launcher. Some open in Eclipse, others in Android Studio.
 
-Download the [example app](https://github.com/Xlythe/SAOLauncherTheme) to get started. It's dead simple, a theme is nothing but images and sounds.
+To get started, you will need either Eclipse or Android Studio. Google either "Android Studio" or "Eclipse ADT Bundle" and you'll find them. The themes that have files like .gradle need Android Studio. The ones without need Eclipse.
 
-- Start by replacing the images in res/drawable-xxhdpi (without changing their names) with your own versions.
-- Next, if you want custom sounds, replace the mp3 files in res/raw.
-- Thirdly, if you want the settings to be dark you don't have to do anything, but to make them white again you'll have to remove the line &lt;string name="app_theme"&gt; in res/values/strings.xml and res/values-v11/strings.xml. Note, your app name is in res/values/strings.xml as well.
-- Lastly, change the package name. To do that, open AndroidManifest.xml to edit the 3rd line (package=...) to whatever you'd like.
+Open up (File -> Open) one of the themes to get started. Most of the images should be in (/app/src/main)/res/xxxhdpi. As long as you don't change the dimensions of the images, they should work fine.
 
-When your app is installed, it'll show up as an option in SAO Launcher.
+For colors, like text color, look in /res/values/colors.xml.
 
-For a more detailed look into how it works, the following Intent Filter is how SAO Launcher detects your theme. If the user selects it, then SAO will attempt to pull images from your app before pulling from its own. That means if there are any images you don't want to theme, just leave them out.
-<code>
-&lt;activity
-    android:name="com.xlythe.saolauncher.theme.Stub"
-    android:label="@string/app_name" &gt;
-    &lt;intent-filter&gt;
-        &lt;action android:name="com.xlythe.saolauncher.THEME" /&gt;
-    &lt;/intent-filter&gt;
-&lt;/activity&gt;
-</code>
+For sounds, look in /res/raw
+
+For fonts, look in /assets
+
+To change the name of the theme, look in /res/values/strings.xml. You will also need to change the package name, which is a unique identifier for your app. The package name typically looks like com.xlythe.saolauncher.theme.XXXX. It appears in a few places, but in general you have to change it...
+
+In AndroidManifest.xml
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xlythe.saolauncher.theme.XXXX" >
+-<provider
+    android:name=".FileProvider"
+    android:authorities="com.xlythe.saolauncher.theme.XXXX.FileProvider"
+
+In /java or /src (Depends on Android Studio vs Eclipse)
+-The folders will look like /com/xlythe/saolauncher/theme/XXXX
+-The .java files, at the very top, "package com.xlythe.saolauncher.theme.XXXX"

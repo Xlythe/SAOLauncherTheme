@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="orange">#f8c840</color>
+    <color name="item_title">#ffffff</color>
+    <color name="item_hint">#90ffffff</color>
+    <color name="item_title_normal">#ffffff</color>
+    <color name="item_hint_normal">#90ffffff</color>
+    <color name="dialog_title">#ffffff</color>
+    <color name="dialog_message">#ffffff</color>
+    <color name="dialog_background">#e4e5e6</color>
+    <!-- <drawable name="orb_background">#e3414141</drawable> -->
+    <drawable name="overlay_background_selected">#e34b72a9</drawable>
+    <drawable name="rectangles_on">#e34b72a9</drawable>
+    <drawable name="rectangles_off">#e3414141</drawable>
+    <drawable name="rectangles_faded">#e3616161</drawable>
+    <!-- <drawable name="player_info_top">#414141</drawable> -->
+    <drawable name="arrow_top">#00000000</drawable>
+    <drawable name="arrow_bottom">#00000000</drawable>
+    <drawable name="arrow">#00000000</drawable>
+    <drawable name="triangle_on">#00000000</drawable>
+    <drawable name="sms_top">#414141</drawable>
+    <drawable name="sms_bottom">#414141</drawable>
+
+</resources>
