@@ -30,7 +30,10 @@ Thumbs.db
 .idea/
 build/
 gradle/
-gradlew
-gradlew.bat
 import-summary.txt
 *.iml
+
+# Gradle wrapper files
+gradlew
+gradlew.bat
+**/gradle/wrapper/

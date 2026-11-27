@@ -1,0 +1,16 @@
+pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
+rootProject.name = 'SAOLauncherTheme'
+include ':SAOAwesomeTheme'
+project(':SAOAwesomeTheme').projectDir = file('SAOAwesomeTheme/app')
+include ':SAOBlackTheme'
+project(':SAOBlackTheme').projectDir = file('SAOBlackTheme')
+include ':SAOCyanModTheme'
+project(':SAOCyanModTheme').projectDir = file('SAOCyanModTheme')
+include ':SAOEleganceTheme'
+project(':SAOEleganceTheme').projectDir = file('SAOEleganceTheme/app')
+include ':SAOGunGaleTheme'
+project(':SAOGunGaleTheme').projectDir = file('SAOGunGaleTheme')
+include ':SAOHDTheme'
+project(':SAOHDTheme').projectDir = file('SAOHDTheme/app')
+include ':SAOKitKatTheme'
+project(':SAOKitKatTheme').projectDir = file('SAOKitKatTheme')
