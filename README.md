@@ -1,6 +1,6 @@
 # SAO Launcher themes
 
-Open the repository root in Android Studio with Android SDK 37 installed. Build all seven themes with `./gradlew assembleDebug`, or select one module, for example `./gradlew :SAOAwesomeTheme:assembleDebug`. Each module produces an independently installable APK.
+Open the repository root in Android Studio with Gradle 9.9.2 and Android SDK 37 installed. Build all seven themes with `gradle assembleDebug`, or select one module, for example `gradle :SAOAwesomeTheme:assembleDebug`. Each module produces an independently installable APK.
 
 To customize a theme, edit its existing resources. Images live in the drawable density directories, colors in `res/values/colors.xml`, sounds in `res/raw` and fonts in `assets` or `res/font`. Keep drawable dimensions and nine-patch borders intact when replacing artwork. The older projects use `res` directly, while others use `app/src/main/res`.
 
