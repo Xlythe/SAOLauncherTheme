@@ -15,6 +15,6 @@ For fonts, look in /assets
 
 To change the name of the theme, look in /res/values/strings.xml. If you are creating a new theme, choose a unique package name for your app. The package name typically looks like com.xlythe.saolauncher.theme.XXXX.
 
-Set `applicationId` in the theme module's `build.gradle`. Themes that use ThemeEngine’s file provider declare it in AndroidManifest.xml. Gradle fills in the `${applicationId}.FileProvider` authority automatically.
+Set `applicationId` in the theme module's `build.gradle`. ThemeEngine registers its file provider automatically using the `${applicationId}.FileProvider` authority.
 
 If you also rename the Java package, update the module's `namespace`, the package declarations and folders under `src` or `app/src/main/java`, and any fully qualified activity names in AndroidManifest.xml.

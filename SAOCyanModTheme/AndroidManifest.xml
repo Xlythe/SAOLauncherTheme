@@ -16,11 +16,6 @@
                 <action android:name="com.xlythe.saolauncher.THEME" />
             </intent-filter>
         </activity>
-        <provider
-            android:name="com.xlythe.engine.theme.FileProvider"
-            android:authorities="${applicationId}.FileProvider"
-            android:enabled="true"
-            android:exported="true" />
     </application>
 
 </manifest>

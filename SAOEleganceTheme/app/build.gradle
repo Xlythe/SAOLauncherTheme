@@ -14,5 +14,5 @@ android {
 }
 
 dependencies {
-    implementation 'com.xlythe:theme-engine:3.0.0'
+    implementation 'com.xlythe:theme-engine:3.0.1'
 }
