@@ -1,7 +1,20 @@
-# SAO Launcher themes
+SAOLauncherTheme
+================
 
-Open the repository root in Android Studio with Gradle 9.9.2 and Android SDK 37 installed. Build all seven themes with `gradle assembleDebug`, or select one module, for example `gradle :SAOAwesomeTheme:assembleDebug`. Each module produces an independently installable APK.
+Here are a collection of themes for SAO Launcher.
 
-To customize a theme, edit its existing resources. Images live in the drawable density directories, colors in `res/values/colors.xml`, sounds in `res/raw` and fonts in `assets` or `res/font`. Keep drawable dimensions and nine-patch borders intact when replacing artwork. The older projects use `res` directly, while others use `app/src/main/res`.
+To get started, install Gradle 9.9.2 and Android SDK 37. Open up (File -> Open) the repository root in Android Studio. Run `gradle assembleDebug` to build all seven themes.
 
-For a new theme, choose a unique `applicationId` in its module's `build.gradle` and update the name in `res/values/strings.xml`. Keep the launcher theme intent filter and application metadata. Themes with a file provider use ThemeEngine's provider and the authority `${applicationId}.FileProvider`, which Gradle expands when it builds the APK. Install the APK and select it in the launcher's theme settings.
+Most of the images should be in `res/drawable-xxxhdpi` or `app/src/main/res/drawable-xxxhdpi`. As long as you don't change the dimensions of the images, they should work fine.
+
+For colors, like text color, look in /res/values/colors.xml.
+
+For sounds, look in /res/raw
+
+For fonts, look in /assets
+
+To change the name of the theme, look in /res/values/strings.xml. If you are creating a new theme, choose a unique package name for your app. The package name typically looks like com.xlythe.saolauncher.theme.XXXX.
+
+Set `applicationId` in the theme module's `build.gradle`. Themes that use ThemeEngine’s file provider declare it in AndroidManifest.xml. Gradle fills in the `${applicationId}.FileProvider` authority automatically.
+
+If you also rename the Java package, update the module's `namespace`, the package declarations and folders under `src` or `app/src/main/java`, and any fully qualified activity names in AndroidManifest.xml.
