@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.xlythe.saolauncher.theme.cyanmod'
+    compileSdk 37
+    defaultConfig {
+        applicationId 'com.xlythe.saolauncher.theme.cyanmod'
+        minSdk 14
+        targetSdk 37
+        versionCode 2
+        versionName '1.1'
+    }
+    buildFeatures { buildConfig = true }
+    sourceSets.main {
+        manifest.srcFile 'AndroidManifest.xml'
+        java.srcDirs = ['src']
+        res.srcDirs = ['res']
+        assets.srcDirs = ['assets']
+    }
+}
+
+dependencies {
+    implementation 'com.xlythe:theme-engine:3.0.0'
+}

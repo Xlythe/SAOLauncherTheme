@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.xlythe.saolauncher.theme.gungale'
+    compileSdk 37
+    defaultConfig {
+        applicationId 'com.xlythe.saolauncher.theme.gungale'
+        minSdk 14
+        targetSdk 37
+        versionCode 4
+        versionName '1.2'
+    }
+    buildFeatures { buildConfig = true }
+    sourceSets.main {
+        manifest.srcFile 'AndroidManifest.xml'
+        java.srcDirs = ['src']
+        res.srcDirs = ['res']
+        assets.srcDirs = ['assets']
+    }
+}
+
+dependencies {
+    implementation 'com.xlythe:theme-engine:3.0.0'
+}

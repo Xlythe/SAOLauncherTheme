@@ -34,3 +34,8 @@ gradlew
 gradlew.bat
 import-summary.txt
 *.iml
+!/gradle/
+!/gradle/wrapper/
+!/gradle/wrapper/*
+!/gradlew
+!/gradlew.bat

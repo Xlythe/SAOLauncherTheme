@@ -1,23 +1,18 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.1.0"
-
+    namespace 'com.xlythe.saolauncher.theme.awesome'
+    compileSdk 37
     defaultConfig {
-        applicationId "com.xlythe.saolauncher.theme.awesome"
-        minSdkVersion 14
-        targetSdkVersion 19
+        applicationId 'com.xlythe.saolauncher.theme.awesome'
+        minSdk 14
+        targetSdk 37
+        versionCode 5
+        versionName '1.4'
     }
-
-    buildTypes {
-        release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
-    }
+    buildFeatures { buildConfig = true }
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:+'
+    implementation 'com.xlythe:theme-engine:3.0.0'
 }

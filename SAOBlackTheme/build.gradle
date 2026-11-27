@@ -1,0 +1,20 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.xlythe.saolauncher.theme.black'
+    compileSdk 37
+    defaultConfig {
+        applicationId 'com.xlythe.saolauncher.theme.black'
+        minSdk 9
+        targetSdk 37
+        versionCode 1
+        versionName '1.0'
+    }
+    buildFeatures { buildConfig = true }
+    sourceSets.main {
+        manifest.srcFile 'AndroidManifest.xml'
+        java.srcDirs = ['src']
+        res.srcDirs = ['res']
+        assets.srcDirs = ['assets']
+    }
+}
